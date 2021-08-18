@@ -118,14 +118,15 @@ Baby.prototype.play = function(){
   return `Playing with ${this.favoriteToy}`;
 }
 
+console.log('Task 3 = Baby constructor completed, added favoriteToy as an argument and creating play method for Baby')
 
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window Binding - A BIG BAD NO NO - is when the 'this.' keyword isn't given direction to pull data from and will return the global window or undefined in 'strict mode'.
+  2. Implicit Binding - Applys to objects with methods and implies that whatever is to the left of the "." is "this.".
+  3. Explicit Binding - Uses .call() , .apply() , or .bind() to pose an "argument" for "this.". .call and .apply invoke the function when entered where .bind returns a new function that can be referred to later. 
+  4. New Binding - When using a constructor function to create a new object the "argument" data entered with it is "this.".
 */
 
 
